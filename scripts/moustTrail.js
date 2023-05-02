@@ -9,10 +9,10 @@ window.addEventListener("mousemove", function (e) {
 	parent_div.appendChild(inner_div)
 	var d = document.body.appendChild(parent_div);
 
-	parent_div.style.left = (e.clientX - 50)+'px';
-	parent_div.style.top = (e.clientY - 50)+'px';
+	parent_div.style.left = (e.clientX - 100)+'px';
+	parent_div.style.top = (e.clientY - 100)+'px';
 
-	if(document.getElementsByClassName('loader-container').length > 50) {
+	if(document.getElementsByClassName('loader-container').length > 200) {
 		document.body.removeChild(to_append)
 	}
 });
