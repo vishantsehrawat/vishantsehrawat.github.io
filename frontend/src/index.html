@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishant Sehrawat</title>
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+    <div class="backgroundImgContainer">
+        <div class="backgroundImg">
+            <img src="../images/vishantBackground.jpg" alt="vish">
+        </div>
+    </div>
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++ navbar ++++++++++++++++++++++++ -->
+
+    <header class="header" id="header">
+        <nav class="navContainer">
+            <a href="#" class="nav__logo">VISHANT SEHRAWAT</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a class="nav__link nav-link home" href="#home">
+                            <i class="uil uil-estate nav__icon"></i>Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link nav-link about" href="#about ">
+                            <i class="uil uil-user nav__icon"></i>About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link nav-link skills" href="#skills">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link nav-link projects" href="#projects">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link nav-link contact" href="#contact">
+                            <i class="uil uil-link-alt nav__icon"></i>Contact Me</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a id="resume-button-1" download class="nav__link nav-link resume" target="_blank"
+                            href="pdf\manish resume final-1.pdf">
+                            <i class="uil uil-file-blank nav__icon"></i>Resume
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
+            </div>
+
+            <!-- for dark mode  -->
+            <!-- <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps nav__icon"></i>
+                </div>
+            </div> -->
+        </nav>
+    </header>
+
+
+    <!-- -----------------------------------------nav end ----------------------------------------- -->
+
+    <!-- ++++++++++++++++++++++++++++  developer description ++++++++++++++++++++ -->
+
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__content grid">
+                <!-- socials -->
+                <div class="home__social">
+                    <a target="_blank" href="https://www.linkedin.com/in/vishantsehrawat/" class="home__social-icon">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/vishantsehrawat" class="home__social-icon">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    <a target="_blank" href="#" class="home__social-icon">
+                        <i class="uil uil-phone-alt"></i>
+                    </a>
+                </div>
+                <!-- profile image -->
+
+                <div class="home__img">
+                    <img src="../images/vishant_resume_photo.png" class="home-img" style="display: none" alt="" />
+
+                </div>
+                <!------------------------------------------------------ summary ---------------------------------------------------------------------- -->
+                <div class="home__data">
+                    <h1 id="user-detail-name" class="home__title">
+                        Vishant Sehrawat
+                    </h1>
+                    <h3 class="home__subtitle">FULL STACK WEB DEVELOPER</h3>
+                    <p class="home__description">
+                        Insatiable appetite for learning and a knack for quickly grasping new skills. Visually-oriented
+                        learner who excels at observing and comprehending complex concepts.
+                    </p>
+                    <a href="#contact" class="button button--flex">
+                        Contact Me
+                        <i class="uil uil-comment-alt button__icon"></i>&nbsp&nbsp
+                    </a>
+                </div>
+            </div>
+            <!-- div scrolll -->
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-button button--flex">
+                    <span class="home__scroll-name">Scroll down</span>
+                    <i class="uil uil-angle-down home__scroll-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------  developer description ------------------------ -->
+
+
+
+    <!-- ++++++++++++++++++++++++++  projects section +++++++++++++++++++++++++++ -->
+
+    <section class="portfolio section" id="projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="portfolio__container container swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="portfolio__content grid swiper-slide project-card">
+                    <figure class="portfolio__figure">
+                        <img src="put project image here" alt="" class="skills-card-img portfolio__img" />
+                    </figure>
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title project-title">project 1 title</h3>
+                        <p class="portfolio__description project-tech-stack project-description">
+                            project description
+
+                            <br />
+                            Tech Stack :
+
+                            <br />
+                            functionlity:->
+
+                        </p>
+                        <a href="project link " target="_blank"
+                            class="project-github-link button button--flex button--small portfolio__button">
+                            GitHubLink
+                            <i class="uil uil-github-alt button__icon"></i>&nbsp
+                        </a>
+                        <a href="netlify link" target="_blank"
+                            class="button button--flex project-deployed-link button--small portfolio__button">
+                            DeployedLink
+                            <i class="uil uil-external-link-alt button__icon"></i>&nbsp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- --------------------------------------------- | 2 | ----------------------------------------------------------- -->
+
+                <!-- <div class="portfolio__content grid swiper-slide project-card">
+              <figure class="portfolio__figure">
+                <img src="img\engage.png" alt="" class="skills-card-img portfolio__img" />
+              </figure>
+              <div class="portfolio__data">
+                <h3 class="portfolio__title project-title">EngageBy</h3>
+                <p class="portfolio__description project-tech-stack project-description">
+                  The NYSED encourages educators to download any EngageNY content they wish to use in the future from our
+                  archive sites below<br />
+                  Tech Stack : NodeJS | Express | socket.io | HTML | CSS | JavaScript | API | Postman
+                </p>
+                <a href="https://github.com/Mbhure/big-square-6235" target="_blank"
+                  class="project-github-link button button--flex button--small portfolio__button">
+                  GitHubLink
+                  <i class="uil uil-github-alt button__icon"></i>&nbsp
+                </a>
+                <a href="https://inquisitive-frangipane-855853.netlify.app/" target="_blank"
+                  class="button button--flex project-deployed-link button--small portfolio__button">
+                  DeployedLink
+                  <i class="uil uil-external-link-alt button__icon"></i>&nbsp
+                </a>
+              </div>
+            </div> -->
+
+                <!-- -------------------------------- | 3 | ------------------------------------------------------ -->
+
+                <!-- <div class="portfolio__content grid swiper-slide project-card">
+              <figure class="portfolio__figure">
+                <img src="img\fashion.png" alt="" class="skills-card-img portfolio__img" />
+              </figure>
+              <div class="portfolio__data">
+                <h3 class="portfolio__title project-title">
+                  Fashion Holic
+                </h3>
+                <p class="portfolio__description project-tech-stack project-description">
+                  Shop For Women and Men Fashion Clothing . Easy Returns & Fast Shipping! COD
+                  Available. Free Shipping. Biggest Collection. Types: Womens Wear, Mens Wear<br />
+                  Tech Stack : HTML | CSS | JavaScript | API | Postman
+                </p>
+                <a href="https://github.com/Mbhure/busy-industry-7181" target="_blank"
+                  class="project-github-link button button--flex button--small portfolio__button">
+                  GitHubLink
+                  <i class="uil uil-github-alt button__icon"></i>&nbsp
+                </a>
+                <a href="https://precious-shortbread-8c078b.netlify.app/" target="_blank"
+                  class="button button--flex project-deployed-link button--small portfolio__button">
+                  DeployedLink
+                  <i class="uil uil-external-link-alt button__icon"></i>&nbsp
+                </a>
+              </div>
+            </div> -->
+
+
+            </div>
+
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- ------------------------------ projects section ------------------------  -->
+
+
+    <!-- ++++++++++++++++++++++++++ about section ++++++++++++++++++++++++++++ -->
+
+    <section class="about section" id="about">
+        <p id="user-detail-intro" style="display: none">
+            "JavaScript","MongoDB","NodeJS","HTML","CSS","Express","socket.io",
+        </p>
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle"></span>
+
+        <div class="about__container container">
+            <img src="../images/vishant_resume_photo.png" alt="" class="about__img" />
+
+            <div class="about__data">
+                <p class="about__description" id="user-detail-intro">
+                    Hi! I'm Vishant Sehrawat
+                    <br /><br />
+                    <br /><br />
+                    Insatiable appetite for learning and a knack for quickly grasping new skills. Visually-oriented
+                    learner who excels at observing and comprehending complex concepts.
+                    <br /><br />
+                </p>
+
+                <div class="about__info">
+                    <div>
+                        <span class="about__info-title">1200+</span>
+                        <span class="about__info-name">Hours of <br />
+                            Coding</span>
+                    </div>
+
+                    <div>
+                        <span class="about__info-title">700+</span>
+                        <span class="about__info-name">DSA <br />
+                            Problems
+                        </span>
+                    </div>
+                    <div>
+                        <span class="about__info-title">20+</span>
+                        <span class="about__info-name">Completed <br />
+                            Project</span>
+                    </div>
+                </div>
+
+                <div class="about__buttons" id="resume-button-2">
+                    <a id="resume-button-2" download="" href="../pdf/vishant_resume_3may2023.pdf" target="_blank"
+                        class="button button--flex">
+                        Download CV<i class="uil uil-cloud-download button__icon"></i>&nbsp&nbsp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <a href="../pdf/vishant_resume_3may2023.pdf" id="resume-link-1" class="nav__link nav-link resume"
+        download="vishant-resume"
+        onclick="window.open('https://drive.google.com/file/d/1kIgbG4IAsHvadJI4Mc3MWAg9JfbFRqb4/view?usp=sharing')">
+        <i class="uil uil-message nav_icon"></i> Resume
+    </a>
+    <!-- --------------------------- about section -------------------------------- -->
+
+
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ SKILLS section +++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+
+        <div class="skills__container container grid">
+            <div>
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Frontend Development</h1>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles">
+                                <h3 class="skills__name skills-card-name">HTML</h3>
+                                <span class="skills__number">70%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="" />
+                                <span class="skills__percentage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles">
+                                <h3 class="skills__name skills-card-name">CSS</h3>
+                                <span class="skills__number">60%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="" />
+                                <span class="skills__percentage skills__70"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data skills-card">
+                            <div class="skills__titles">
+                                <h3 class="skills__name skills-card-name">JavaScript</h3>
+                                <span class="skills__number">60%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <img class="skills-card-img fyouseek" src="" alt="" />
+                                <span class="skills__percentage skills__80"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Backend -->
+            <div class="skills__content skills__close">
+                <div class="skills__header">
+                    <i class="uil uil-cloud-database-tree skills__icon"></i>
+
+                    <div>
+                        <h1 class="skills__title">Backend Development</h1>
+                    </div>
+
+                    <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+
+                <div class="skills__list grid">
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">Node JS</h3>
+                            <span class="skills__number">60%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">Express JS</h3>
+                            <span class="skills__number">60%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">Redis</h3>
+                            <span class="skills__number">50%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__60"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">Mongoose</h3>
+                            <span class="skills__number">60%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">MongoDB</h3>
+                            <span class="skills__number">65%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">Rest APIs</h3>
+                            <span class="skills__number">60%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tools -->
+            <div class="skills__content skills__close">
+                <div class="skills__header">
+                    <i class="uil uil-arrow skills__icon"></i>
+                    <div>
+                        <h1 class="skills__title">Tools</h1>
+                    </div>
+
+                    <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+
+                <div class="skills__list grid">
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">
+                                VS-Code | Codepan | Replit
+                            </h3>
+                            <span class="skills__number">90%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__90"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">
+                                Netlify | Vercel | cylic.sh
+                            </h3>
+                            <span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">Git & Github</h3>
+                            <span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">Postman</h3>
+                            <span class="skills__number">60%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">Canva</h3>
+                            <span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">NPM</h3>
+                            <span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- softskills -->
+            <div class="skills__content skills__close">
+                <div class="skills__header">
+                    <i class="uil uil-analysis skills__icon"></i>
+
+                    <div>
+                        <h1 class="skills__title">Soft Skills</h1>
+                    </div>
+
+                    <i class="uil uil-angle-down skills__arrow"></i>
+                </div>
+
+                <div class="skills__list grid">
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">
+                                Project Management
+                            </h3>
+                            <span class="skills__number">80%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">Team Working</h3>
+                            <span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">
+                                Adaptability
+                            </h3>
+                            <span class="skills__number">90%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__90"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">Critical Thinking</h3>
+                            <span class="skills__number">70%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data skills-card">
+                        <div class="skills__titles">
+                            <h3 class="skills__name skills-card-name">Observation</h3>
+                            <span class="skills__number">100%</span>
+                        </div>
+                        <div class="skills__bar">
+                            <img class="skills-card-img fyouseek" src="" alt="" />
+                            <span class="skills__percentage skills__70"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------- SKILLS section ---------------------------------------------------------------- -->
+
+    <!-- +++++++++++++++++++++++++++++++++++++++ | github calender | ++++++++++++++++++++++++++++++++++++++++++++++-->
+
+
+    <section class="about section container react-activity-calendar" id="github">
+        <h2 class="section__title">MY GITHUB CONTRIBUTION</h2>
+        <div class="Github-calendar">vishant</div>
+    </section>
+
+    <section class="portfolio section githubstates" id="githubstates">
+        <h2 class="section__title">GitHub Activities</h2>
+
+        <div class="portfolio__container container swiper-container">
+            <div class="swiper-wrapper github-images">
+                <img id="github-streak-stats" class="portfolio__content grid swiper-slide"
+                    src="https://github-readme-streak-stats.herokuapp.com/?user=vishantsehrawat&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j[,%20Y]" />
+
+                <img id="github-top-langs" class="portfolio__content grid swiper-slide"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=vishantsehrawat&show_icons=true&locale=en&layout=compact&theme=github_dark&hide_border=true"
+                    alt="ovi" />
+
+                <img id="github-stats-card" class="portfolio__content grid swiper-slide"
+                    src="https://github-readme-stats.vercel.app/api?username=vishantsehrawat&show_icons=true&locale=en&theme=github_dark&hide_border=true"
+                    alt="ovi" />
+
+                <img class="portfolio__content grid swiper-slide"
+                    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=vishantsehrawat&theme=github_dark" />
+            </div>
+
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- ------------------------------------- | github calender | ------------------------------------------------------ -->
+
+    <br /><br />
+
+</body>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script>
+    GitHubCalendar(".Github-calendar", "vishantsehrawat", { responsive: true });
+</script>
+<script src="../scripts/index.js"></script>
+
+
+</html>
