@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     <link rel="stylesheet" href="./styles/index.css">
     <style>
-        #underprogress{
+        #underprogress {
             font-size: 80px;
             color: red;
             text-align: center;
@@ -28,10 +28,10 @@
 
     <div class="pageloader">
         <div class="progress-bar">
-          
+
         </div>
-      </div>
-      <h1>PAGE LOADER 100%</h1>
+    </div>
+    <h1>PAGE LOADER 100%</h1>
     <!-- +++++++++++++++++++++++++++++++++++++++++++++++++ navbar ++++++++++++++++++++++++ -->
     <header class="header" id="header">
         <nav class="navContainer">
@@ -321,8 +321,9 @@
                     </div>
                 </div>
 
-                <div class="about__buttons" id="resume-button-2">
-                    <a id="resume-button-2" download="" href="./pdf/vishant_resume_3may2023.pdf" target="_blank"
+                <div class="about__buttons">
+
+                    <a id="resume-button-2" download href="./pdf/vishant_resume_3may2023.pdf" target="_blank"
                         class="button button--flex">
                         Download CV<i class="uil uil-cloud-download button__icon"></i>&nbsp&nbsp
                     </a>
@@ -333,6 +334,11 @@
 
 
     <a href="./pdf/vishant_resume_3may2023.pdf" id="resume-link-1" class="nav__link nav-link resume"
+        download="vishant-resume"
+        onclick="window.open('https://drive.google.com/file/d/1kIgbG4IAsHvadJI4Mc3MWAg9JfbFRqb4/view?usp=sharing')">
+        <i class="uil uil-message nav_icon"></i> Resume
+    </a>
+    <a href="./pdf/vishant_resume_3may2023.pdf" id="resume-link-2" class="nav__link nav-link resume"
         download="vishant-resume"
         onclick="window.open('https://drive.google.com/file/d/1kIgbG4IAsHvadJI4Mc3MWAg9JfbFRqb4/view?usp=sharing')">
         <i class="uil uil-message nav_icon"></i> Resume
