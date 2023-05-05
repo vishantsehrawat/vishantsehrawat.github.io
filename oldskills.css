@@ -1,0 +1,117 @@
+
+/* Section Skills */
+.section#skills {
+    background-color: #f1f1f1;
+    padding: 100px 0;
+}
+
+.section#skills .section__title {
+    color: #111;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Skills Container */
+.section#skills .skills__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-top: 60px;
+}
+
+/* Frontend Development */
+.section#skills .skills__container .skills__content:first-child {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.section#skills .skills__container .skills__content:first-child .skills__header {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    padding: 30px;
+}
+
+.section#skills .skills__container .skills__content:first-child .skills__icon {
+    color: #ff3e00;
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.section#skills .skills__container .skills__content:first-child .skills__title {
+    color: #111;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section#skills .skills__container .skills__content:first-child .skills__arrow {
+    color: #ff3e00;
+    font-size: 30px;
+    margin-left: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section#skills .skills__container .skills__content:first-child .skills__arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.section#skills .skills__container .skills__content:first-child .skills__list {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 30px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.section#skills .skills__container .skills__content:first-child.active .skills__arrow {
+    transform: rotate(180deg);
+}
+
+.section#skills .skills__container .skills__content:first-child.active .skills__list {
+    max-height: 1000px;
+}
+
+/* Backend Development */
+.section#skills .skills__container .skills__content:last-child {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.section#skills .skills__container .skills__content:last-child .skills__header {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    padding: 30px;
+}
+
+.section#skills .skills__container .skills__content:last-child .skills__icon {
+    color: #ff3e00;
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.section#skills .skills__container .skills__content:last-child .skills__title {
+    color: #111;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section#skills .skills__container .skills__content:last-child .skills__arrow {
+    color: #ff3e00;
+    font-size: 30px;
+    margin-left: auto;
+    transition: transform 0.3s ease-in-out
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* Add horizontal padding of 15px */
+}

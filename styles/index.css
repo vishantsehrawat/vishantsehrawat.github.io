@@ -325,7 +325,6 @@ ul {
 
 .portfolio {
     background-color: #f8f8f8;
-    padding: 80px 0;
 }
 
 .portfolio__container {
@@ -618,6 +617,7 @@ ul {
 
 .about.section {
     background-color: #f2f2f2;
+    padding: 4%;
 }
 
 
@@ -739,121 +739,109 @@ ul {
 
 /* <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ SKILLS section +++++++++++++++++++++++++++++++++++++++++++++++++++ --> */
 
-/* Section Skills */
-.section#skills {
-    background-color: #f1f1f1;
-    padding: 100px 0;
-}
-
-.section#skills .section__title {
-    color: #111;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 60px;
+/* Center the skills section */
+#skills {
     text-align: center;
+    margin: 50px 0 0 0 ;
+    background-color: #F44336;
+
+    padding: 20px;
+}
+
+
+
+/* #2196F3 (Material blue)
+#4CAF50 (Material green)
+#FF9800 (Material orange)
+#9C27B0 (Material purple)
+#F44336 (Material red)
+#607D8B (Material grey) */
+
+#skills .mid {
+    font-size: 50px;
     text-transform: uppercase;
+    color: #333333;
 }
 
-/* Skills Container */
-.section#skills .skills__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-    margin-top: 60px;
-}
-
-/* Frontend Development */
-.section#skills .skills__container .skills__content:first-child {
+/* Style for the skills cards */
+.skills-card {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: relative;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); */
+    transition: all 0.3s ease;
+    animation: jump 1s ease-in-out infinite;
+    /* background-color: #333333; */
+
+    /* background-color: #F5F5F5; */
+
+    /* background-color: #ADD8E6; */
+
+    /* background-color: #90EE90; */
+
+    /* background-color: #E6E6FA; */
+
+    /* background-color: #FFFFE0; */
+    background-color: transparent;
+
+
+
+
+
+
+
+
 }
 
-.section#skills .skills__container .skills__content:first-child .skills__header {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    padding: 30px;
+.skills-card:hover {
+    transform: scale(1.05);
 }
 
-.section#skills .skills__container .skills__content:first-child .skills__icon {
-    color: #ff3e00;
-    font-size: 50px;
-    margin-right: 20px;
-}
-
-.section#skills .skills__container .skills__content:first-child .skills__title {
-    color: #111;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.section#skills .skills__container .skills__content:first-child .skills__arrow {
-    color: #ff3e00;
-    font-size: 30px;
-    margin-left: auto;
-    transition: transform 0.3s ease-in-out;
-}
-
-.section#skills .skills__container .skills__content:first-child .skills__arrow.rotate {
-    transform: rotate(180deg);
-}
-
-.section#skills .skills__container .skills__content:first-child .skills__list {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 30px;
-    transition: max-height 0.3s ease-in-out;
-}
-
-.section#skills .skills__container .skills__content:first-child.active .skills__arrow {
-    transform: rotate(180deg);
-}
-
-.section#skills .skills__container .skills__content:first-child.active .skills__list {
-    max-height: 1000px;
-}
-
-/* Backend Development */
-.section#skills .skills__container .skills__content:last-child {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: relative;
-}
-
-.section#skills .skills__container .skills__content:last-child .skills__header {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    padding: 30px;
-}
-
-.section#skills .skills__container .skills__content:last-child .skills__icon {
-    color: #ff3e00;
-    font-size: 50px;
-    margin-right: 20px;
-}
-
-.section#skills .skills__container .skills__content:last-child .skills__title {
-    color: #111;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.section#skills .skills__container .skills__content:last-child .skills__arrow {
-    color: #ff3e00;
-    font-size: 30px;
-    margin-left: auto;
-    transition: transform 0.3s ease-in-out
-}
-
-.container {
-    max-width: 1140px;
+.skills-card-img {
+    width: 80px;
+    height: 80px;
     margin: 0 auto;
-    padding: 0 15px;
-    /* Add horizontal padding of 15px */
+    display: block;
+}
+
+.skills-card-name {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Keyframes for the jumping animation */
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.skills-card:nth-child(2n) {
+    animation-delay: 0.2s;
+}
+
+.skills-card:nth-child(2n-1) {
+    animation-delay: 0.4s;
+}
+
+/* Grid layout for the skills cards */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
 }
 
 /* ------------------------------- SKILLS section ---------------------------------------------------------------- --> */
@@ -861,20 +849,11 @@ ul {
 
 /* <!-- +++++++++++++++++++++++++++++++++++++++ | github calender | ++++++++++++++++++++++++++++++++++++++++++++++--> */
 
-
-
-
-.about {
-    margin-top: 50px;
-    margin-bottom: 3rem;
-}
-
 .section__title {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
     font-size: 3rem;
-    padding: 2rem 0;
     color: #424242;
 
 }
@@ -883,21 +862,18 @@ ul {
     text-align: center;
     font-size: 1.25rem;
     margin-top: 1.5rem;
+    padding: 4% 8%;
     color: #666;
 }
 
 .githubstates {
-    margin-top: 80px;
-    margin-bottom: 80px;
     background-color: #f2f2f2;
-    padding: 4rem 0;
 }
 
 .portfolio__container {
     position: relative;
     width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+    margin: 0 1%;
 }
 
 .swiper-container {
@@ -911,14 +887,19 @@ ul {
 
 .github-images {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     margin-top: 40px;
+}
+.github-images *{
+    width: 20% ;
+    height: 300px;
 }
 
 .portfolio__content {
     width: 100%;
     height: auto;
+    object-fit: cover;
     border-radius: 6.5px;
     overflow: hidden;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -947,10 +928,17 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 60px;
 }
+.contact__container >div:first-child{
+    padding: 4%;
+}
+.contact__form{
+    margin-right: 25%;
 
+}
 .contact__information {
     display: flex;
     align-items: center;
+    margin-left: 25%;
     margin-bottom: 20px;
 }
 
