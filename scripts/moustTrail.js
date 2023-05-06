@@ -16,3 +16,4 @@ window.addEventListener("mousemove", function (e) {
 		document.body.removeChild(to_append)
 	}
 });
+

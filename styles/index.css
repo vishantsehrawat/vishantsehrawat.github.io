@@ -742,7 +742,7 @@ ul {
 /* Center the skills section */
 #skills {
     text-align: center;
-    margin: 50px 0 0 0 ;
+    margin: 50px 0 0 0;
     background-color: #F44336;
 
     padding: 20px;
@@ -891,8 +891,9 @@ ul {
     grid-gap: 2rem;
     margin-top: 40px;
 }
-.github-images *{
-    width: 20% ;
+
+.github-images * {
+    width: 20%;
     height: 300px;
 }
 
@@ -928,13 +929,16 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 60px;
 }
-.contact__container >div:first-child{
+
+.contact__container>div:first-child {
     padding: 4%;
 }
-.contact__form{
+
+.contact__form {
     margin-right: 25%;
 
 }
+
 .contact__information {
     display: flex;
     align-items: center;
@@ -1127,3 +1131,241 @@ ul {
 
 
 /* <!--  ---------------------------------------------------- | footer |---------------------------------------- --> */
+
+
+/* +++++++++++++++ skill section rotation css ++++++++++++++++++++ */
+#skills1 {
+    /* height: 100vh; */
+}
+
+#grid1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+
+.skills-card1 {
+    border-radius: 5px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+.skills-card1>img {
+    object-fit: cover;
+}
+
+
+
+.centerImageContainer {
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+}
+
+.innerimagecontainer {
+    height: 220px;
+    width: 220px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: -80px;
+}
+
+.about__img1 {
+    width: 100%;
+    height: auto;
+}
+
+.mid1 {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    color: #2196f3;
+}
+
+.skills-card1:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+}
+
+.skills-card1:nth-child(2) {
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 0.8s;
+}
+
+.skills-card1:nth-child(3) {
+    visibility: hidden;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 1.6s;
+}
+
+.skills-card1:nth-child(3) {
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 2s;
+}
+
+.skills-card1:nth-child(4) {
+    visibility: hidden;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 3.2s;
+}
+
+.skills-card1:nth-child(5) {
+    visibility: hidden;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 4s;
+}
+
+.skills-card1:nth-child(6) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    visibility: hidden;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 4.8s;
+}
+
+.skills-card1:nth-child(7) {
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 5.6s;
+}
+
+.skills-card1:nth-child(8) {
+    width: 50px;
+    visibility: hidden;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 6.4s;
+}
+
+.skills-card1:nth-child(9) {
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 7.2s;
+}
+
+.skills-card1:nth-child(10) {
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 8s;
+}
+
+.skills-card1:nth-child(11) {
+    width: 50px;
+    visibility: hidden;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 8.8s;
+}
+.skills-card1:nth-child(12) {
+    width: 50px;
+    visibility: hidden;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin: auto;
+    animation: circle 11s linear infinite;
+    animation-delay: 9.6s;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg) translate(-245px) rotate(0deg);
+        visibility: visible;
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-245px) rotate(-360deg);
+        visibility: visible;
+    }
+}
+
+/* ------------ skill section rotation ------------------------------------------- */
