@@ -68,6 +68,18 @@ Maroon:
 #A52A2A (brownish red)
 #B22222 (firebrick red)
 
+#1C1C1C
+#222222
+#333333
+#444444
+#555555
+#666666
+#777777
+
+
+
+
+
  */
 
 
@@ -232,6 +244,7 @@ ul {
     /* height: 80px; */
     width: 100%;
     display: flex;
+    background-color: black;
     justify-content: space-between;
     align-items: center;
     /* background-color: black; */
@@ -266,7 +279,7 @@ ul {
 
 .nav__list li.nav__item {
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
 
@@ -286,7 +299,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #F5F5F5;
 }
 
 .nav__item {
@@ -353,6 +366,7 @@ ul {
     justify-content: center;
     align-items: center;
     height: calc(100vh - 90px);
+    background-color: black;
 }
 
 .home__container {
@@ -695,7 +709,7 @@ ul {
 /* Center the skills section */
 #skills {
     text-align: center;
-    margin: 50px 0px 30px 0px;
+    margin: 50px 0px 0px 0px;
     background-color: #F44336;
 
     padding: 20px;
@@ -1064,8 +1078,9 @@ ul {
 
 /* +++++++++++++++ skill section rotation css ++++++++++++++++++++ */
 #skills1 {
-    height: 70vh;
+    height: 100vh;
     position: relative;
+    background-color: #F44336;
 }
 
 #grid1 {
@@ -1083,22 +1098,25 @@ ul {
 }
 
 .skills-card1>img {
-    object-fit: cover;
+    object-fit: contain;
+    width: 4vw;
+    height: 4vw;
+    transform: translate(-50%,-50%);
 }
 
 
 
 .centerImageContainer {
     position: relative;
-    height: 65vh;
+    height: 100vh;
 }
 
 .innerimagecontainer {
-    height: 220px;
-    width: 220px;
+    height: 33vw;
+    width: 33vw;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 47%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
     overflow: hidden;
@@ -1132,8 +1150,7 @@ ul {
 }
 
 .skills-card1:nth-child(1) {
-    width: 40px;
-    height: 40px;
+
     border-radius: 50%;
     position: absolute;
     top: -50%;
@@ -1144,8 +1161,7 @@ ul {
 
 .skills-card1:nth-child(2) {
     visibility: hidden;
-    width: 50px;
-    height: 50px;
+    
     border-radius: 50%;
     position: absolute;
     top: -50%;
@@ -1158,8 +1174,6 @@ ul {
 .skills-card1:nth-child(3) {
     visibility: hidden;
 
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
     position: absolute;
     top: -50%;
@@ -1171,8 +1185,7 @@ ul {
 
 .skills-card1:nth-child(3) {
     visibility: hidden;
-    width: 50px;
-    height: 50px;
+  
     border-radius: 50%;
     position: absolute;
     top: -50%;
@@ -1185,8 +1198,7 @@ ul {
 .skills-card1:nth-child(4) {
     visibility: hidden;
 
-    width: 50px;
-    height: 50px;
+
     border-radius: 50%;
     position: absolute;
     top: -50%;
@@ -1199,8 +1211,6 @@ ul {
 .skills-card1:nth-child(5) {
     visibility: hidden;
 
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
     position: absolute;
     top: -50%;
@@ -1211,8 +1221,7 @@ ul {
 }
 
 .skills-card1:nth-child(6) {
-    width: 50px;
-    height: 50px;
+  
     border-radius: 50%;
     visibility: hidden;
     position: absolute;
@@ -1224,8 +1233,7 @@ ul {
 }
 
 .skills-card1:nth-child(7) {
-    width: 50px;
-    height: 50px;
+
     visibility: hidden;
     border-radius: 50%;
     position: absolute;
@@ -1237,9 +1245,7 @@ ul {
 }
 
 .skills-card1:nth-child(8) {
-    width: 50px;
     visibility: hidden;
-    height: 50px;
     border-radius: 50%;
     position: absolute;
     top: -50%;
@@ -1251,8 +1257,6 @@ ul {
 
 .skills-card1:nth-child(9) {
     visibility: hidden;
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
     position: absolute;
     top: -50%;
@@ -1264,8 +1268,6 @@ ul {
 
 .skills-card1:nth-child(10) {
     visibility: hidden;
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
     position: absolute;
     top: -50%;
@@ -1276,9 +1278,7 @@ ul {
 }
 
 .skills-card1:nth-child(11) {
-    width: 50px;
     visibility: hidden;
-    height: 50px;
     border-radius: 50%;
     position: absolute;
     top: -50%;
@@ -1289,9 +1289,7 @@ ul {
 }
 
 .skills-card1:nth-child(12) {
-    width: 50px;
     visibility: hidden;
-    height: 50px;
     border-radius: 50%;
     position: absolute;
     top: -50%;
@@ -1303,13 +1301,28 @@ ul {
 
 @keyframes circle {
     0% {
-        transform: rotate(0deg) translate(-245px) rotate(0deg);
+        transform: rotate(0deg) translate(-21vw) rotate(0deg);
+        visibility: visible;
+        
+    }
+    /* 25%{
+        transform: rotate(90deg) translate(-345px) rotate(0deg);
+        visibility: visible;
+        
+    }
+    50%{
+        transform: rotate(180deg) translate(-545px) rotate(0deg);
+        visibility: visible;
+        
+    }
+    75%{
+        transform: rotate(270deg) translate(-345px) rotate(0deg);
         visibility: visible;
 
-    }
+    } */
 
     100% {
-        transform: rotate(360deg) translate(-245px) rotate(-360deg);
+        transform: rotate(360deg) translate(-21vw) rotate(-360deg);
         visibility: visible;
     }
 }
