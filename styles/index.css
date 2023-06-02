@@ -5,13 +5,6 @@
 }
 
 :root {
-    --primary-color: #6c63ff;
-    --secondary-color: #524bd4;
-    --text-color: #222;
-    --link-color: var(--text-color);
-    --link-hover-color: var(--primary-color);
-
-
     --main-header-color: #1E90FF;
 }
 
@@ -91,7 +84,7 @@ Maroon:
 
 body {
     font-family: 'League Spartan', sans-serif;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 ul {
@@ -611,6 +604,9 @@ ul {
     align-items: center;
 }
 
+.about__container >img{
+    border-radius: 50%;
+}
 .about__img {
     max-width: 100%;
     height: auto;
@@ -879,6 +875,24 @@ ul {
 .portfolio__content:hover {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
+}
+
+/* #################### overriding chart colors ################################# */
+
+rect.ContributionCalendar-day[data-level='0'] {
+    fill: #92c8ff;
+}
+rect.ContributionCalendar-day[data-level='1'] {
+    fill: #4169E1;
+}
+rect.ContributionCalendar-day[data-level='2'] {
+    fill: #7FFF00;
+}
+rect.ContributionCalendar-day[data-level='3'] {
+    fill: #FF007F;
+}
+rect.ContributionCalendar-day[data-level='4'] {
+    fill: #FF0000;
 }
 
 /* <!-- ------------------------------------- | github calender | ------------------------------------------------------ --> */
