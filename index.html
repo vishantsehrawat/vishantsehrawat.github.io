@@ -127,7 +127,7 @@
             <!-- profile image -->
 
             <div class="home__img">
-                <img src="./images/vishant_portfolio1-removebg-preview.png" class="home-img" alt="" />
+                <img src="./images" class="home-img" alt="" />
 
             </div>
             <!-- div scrolll -->
@@ -141,7 +141,7 @@
     </section>
     <!-- ------------------------  developer description ------------------------ -->
 
-    
+
     <!-- ++++++++++++++++++++++++++  projects section +++++++++++++++++++++++++++ -->
 
     <section class="portfolio section" id="projects">
@@ -152,26 +152,21 @@
 
                 <div class="portfolio__content grid swiper-slide project-card">
                     <figure class="portfolio__figure">
-                        <img src="put project image here" alt="" class="skills-card-img portfolio__img" />
+                        <img src="./images/cogniveraproject.png" alt="" class="skills-card-img portfolio__img" />
                     </figure>
                     <div class="portfolio__data">
-                        <h3 class="portfolio__title project-title">Amaxon clone</h3>
+                        <h3 class="portfolio__title project-title">Cognivera (Slido Clone)</h3>
                         <p class="portfolio__description project-tech-stack project-description">
-                            project description
-
-                            <br />
-                            Tech Stack :
-
-                            <br />
-                            functionlity:->
-
+                            <p>Project description</p><br>
+                            <p>Tech Stack :</p><br>
+                            <p>Functionlity:-></p>
                         </p>
-                        <a href="https://github.com/vishantsehrawat/amazonClone" target="_blank"
+                        <a href="https://github.com/vishantsehrawat/Cognivera---Audience-Interaction" target="_blank"
                             class="project-github-link button button--flex button--small portfolio__button">
                             GitHubLink
                             <i class="uil uil-github-alt button__icon"></i>&nbsp
                         </a>
-                        <a href="https://amazon-clone-masai.netlify.app/" target="_blank"
+                        <a href="https://cognivera.netlify.app/" target="_blank"
                             class="button button--flex project-deployed-link button--small portfolio__button">
                             DeployedLink
                             <i class="uil uil-external-link-alt button__icon"></i>&nbsp
@@ -188,13 +183,9 @@
                     <div class="portfolio__data">
                         <h3 class="portfolio__title project-title">Derma Store</h3>
                         <p class="portfolio__description project-tech-stack project-description">
-                            project description
-
-                            <br />
-                            Tech Stack :
-
-                            <br />
-                            functionlity:->
+                            <p>Project description</p><br>
+                            <p>Tech Stack :</p><br>
+                            <p> Functionlity:-></p>
 
                         </p>
                         <a href="" target="_blhttps://github.com/vishantsehrawat/gullible-pear-795ank"
@@ -219,13 +210,9 @@
                     <div class="portfolio__data">
                         <h3 class="portfolio__title project-title">blooming dales</h3>
                         <p class="portfolio__description project-tech-stack project-description">
-                            project description
-
-                            <br />
-                            Tech Stack :
-
-                            <br />
-                            functionlity:->
+                            <p>Project description</p><br>
+                            <p>Tech Stack :</p><br>
+                            <p> Functionlity:-></p>
 
                         </p>
                         <a href="https://github.com/vishantsehrawat/late-trousers-7947" target="_blank"
@@ -250,13 +237,9 @@
                     <div class="portfolio__data">
                         <h3 class="portfolio__title project-title">blooming dales</h3>
                         <p class="portfolio__description project-tech-stack project-description">
-                            project description
-
-                            <br />
-                            Tech Stack :
-
-                            <br />
-                            functionlity:->
+                            <p>Project description</p><br>
+                            <p>Tech Stack :</p><br>
+                            <p> Functionlity:-></p>
 
                         </p>
                         <a href="https://github.com/vishantsehrawat/late-trousers-7947" target="_blank"
@@ -302,7 +285,7 @@
             <div class="about__data">
                 <p class="about__description" id="user-detail-intro">
                     Hi! I'm Vishant Sehrawat,
-                    <br /> 
+                    <br />
                     Insatiable appetite for learning and a knack for quickly grasping new skills. Visually-oriented
                     learner who excels at observing and comprehending complex concepts.
                 </p>
@@ -542,7 +525,7 @@
             <div class="swiper-wrapper github-images">
                 <img id="github-streak-stats" class="portfolio__content grid swiper-slide"
                     src="https://streak-stats.demolab.com?user=vishantsehrawat&theme=sunset-gradient" />
-<!-- 
+                <!-- 
                 <img id="github-top-langs" class="portfolio__content grid swiper-slide"
                     src="https://github-readme-activity-graph.cyclic.app/graph?username=vishantsehrawat&bg_color=ffd1d1&color=d80eca&line=4c9e65&point=a30000&area=true&hide_border=true"
                     alt="ovi" /> -->
@@ -700,14 +683,22 @@
     <br /><br />
 
 </body>
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
 <script>
     // get it from this website 
     // https://github.com/Bloggify/github-calendar
     GitHubCalendar(".Github-calendar", "vishantsehrawat", { responsive: true });
+    // Use a proxy
+    GitHubCalendar(".Github-calendar", "vishantsehrawat", {
+        proxy(vishantsehrawat) {
+            return fetch(`https://your-proxy.com/github?user=${vishantsehrawat}`)
+        }
+    }).then(r => r.text())
 </script>
 <script src="./scripts/index.js"></script>
-<script src="./scripts/moustTrail.js"></script>
+<!-- <script src="./scripts/moustTrail.js"></script> -->
 
 
 </html>
