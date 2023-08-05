@@ -252,7 +252,7 @@ ul {
     align-items: center;
     margin: 2% 5%;
     border-radius: 10px;
-    background: white;
+    background: black;
 }
 
 .logoContainer {
@@ -295,7 +295,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #111111;
+    color: white;
 }
 
 .nav__item {
@@ -360,21 +360,23 @@ ul {
 .home.section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    padding-top: 3%;
     height: calc(100vh - 90px);
-    background-color: black;
+    background-color: white;
+    position: relative;
 }
 
 .home__container {
     display: flex;
-    margin: 8%;
+    margin: 0px 5%;
     gap: 2rem;
-    align-items: center;
+    align-items: start;
     padding: 0 1rem;
 }
 
 .home__container .home__content {
-    width: 45%;
+    width: 100%;
 }
 
 .home__container .home__img {
@@ -391,6 +393,8 @@ ul {
 
 .home__social {
     display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -409,11 +413,16 @@ ul {
 
 .home__img img {
     display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    /* width: 300px; */
+    /* height: 300px; */
     z-index: 10;
+    bottom: 0;
+    left: 34%;
+    width: 60vh;
+    opacity: 1;
 }
 
 
@@ -435,9 +444,45 @@ ul {
 }
 
 .home__data .home__subtitle {
-    color: white;
+    justify-content: center;
+    /* color: black; */
     padding: 10px;
-    font-size: 30px;
+    width: 100%;
+    /* padding: 0px 20%; */
+    text-align: center;
+    font-size: 9rem;
+    display: flex;
+    z-index: 1;
+    /* animation: fullstacktextanimation .1s linear infinite; */
+
+}
+
+.home__data .home__subtitle:hover {
+    /* z-index: 11; */
+}
+
+.home__subtitle p {
+    color: transparent;
+    z-index: 1;
+    -webkit-text-stroke: 3px black;
+    background-color: transparent;
+    backface-visibility: visible;
+
+}
+
+
+/* Define the animation for the gradient */
+@keyframes fullstacktextanimation {
+
+    0%,
+    100% {
+        z-index: 1;
+    }
+
+    25%,
+    75% {
+        z-index: 111;
+    }
 }
 
 .home__data .home__description {
@@ -445,6 +490,8 @@ ul {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
+    display: none;
+    width: 35%;
     padding: 10px;
 }
 
@@ -493,6 +540,7 @@ ul {
     padding: 15px 15px;
     border-radius: 10px;
     display: inline-flex;
+    display: none;
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
@@ -763,7 +811,7 @@ ul {
 
 /* Section styles */
 .section {
-    /* margin-bottom: 40px; */
+    padding: 50px 0;
 }
 
 .section__title {
@@ -776,7 +824,7 @@ ul {
 /* Portfolio styles */
 .portfolio {
     /* border: 1px solid #ccc; */
-    background-color: #fff;
+    background-color: #f4f4f4;
 }
 
 .portfolio__container {
@@ -821,6 +869,7 @@ ul {
 
 .portfolio__data a {
     width: 100%;
+    margin-bottom: 2px;
 }
 
 .portfolio__title {
@@ -837,7 +886,7 @@ ul {
 
 .portfolio__button {
     display: inline-block;
-    background-color: #3f51b5;
+    background-color: var(--main-header-color);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -849,7 +898,8 @@ ul {
 }
 
 .portfolio__button:hover {
-    background-color: #1a237e;
+    background-color: black;
+    
 }
 
 .portfolio__container .swiper-wrapper {
@@ -877,7 +927,7 @@ ul {
 
 
 .portfolio {
-    padding: 100px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 .githubstates {
